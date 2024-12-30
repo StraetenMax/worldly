@@ -92,7 +92,7 @@
         <mj-text align="center" color="#000000" font-family="Ubuntu, Helvetica, Arial, sans-serif" font-size="13px" padding="0 25px" font-weight="700" text-transform="uppercase">
           <p>rate your stay!</p>
         </mj-text>
-        <mj-image href="https://mjml.io" src="http://191n.mj.am/img/191n/3s/x2l.png" alt="Book rate" width="131px"></mj-image>
+        <mj-image href="https://mjml.io" src="http://191n.mj.am/img/191n/3s/x2l.png" alt="Book rate" width="131pxcd"></mj-image>
       </mj-column>
     </mj-section>
     <mj-section background-color="#4b525C">
