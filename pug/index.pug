@@ -2,11 +2,84 @@ extends templates/_layout
 //- content
 block content
     //- Header Text
-    mj-section(background-color='#ffffff')
+    mj-section(padding-bottom="20px" padding-top="20px")
+        mj-group
+            mj-column
+                mj-text(mj-class="preheader") 
+                    a(href="https://mjml.io") [[HEADLINE]]
+            mj-column
+                mj-text(mj-class="preheader" align="right") 
+                    a(href="https://mjml.io") [[PERMALINK_LABEL]]
+    //- Logo
+    mj-section(background-color="#ffffff")
         mj-column
-            mj-text(align='center' font-size='32px' font-style='italic' font-family='serif' padding-top='40px' padding-bottom='40px') The Pizza Times
-    mj-section(background-url="https://demo.tutorialzine.com/2017/02/images/header-image.jpg" background-size="cover" background-repeat="no-repeat")
+            mj-image(src="http://191n.mj.am/img/191n/3s/x0j.png" alt="Worldly logo" align="center" width="105px" padding="10px 0")/
+    //- Navbar
+    mj-section(background-color="#ffe118" padding="20px")
         mj-column
-            mj-spacer(height="300px")
-    
-    
+            mj-navbar(base-url="https://mjml.io" hamburger="hamburger" ico-color="#444444")
+                mj-navbar-link(href="https://mjml.io") home
+                mj-navbar-link(href="https://mjml.io") Summer deals
+                mj-navbar-link(href="https://mjml.io") Our blog
+                mj-navbar-link(href="https://mjml.io") Follow us
+    //- Hero
+    mj-section(background-url="http://191n.mj.am/img/191n/3s/xm9.jpg" background-repeat="no-repeat" background-size="cover" padding="20px 0")
+        mj-column
+            mj-text(align="center" color="#ffffff" line-height="32px" font-family="Ubuntu, Helvetica, Arial, sans-serif" font-size="28px" padding="10px" text-transform="uppercase") are you
+                div seascape?
+        mj-column(width="50%" vertical-align="bottom")
+            mj-text(align="center" color="#ffffff" line-height="32px" font-family="Ubuntu, Helvetica, Arial, sans-serif" font-size="28px" padding-top="180px" text-transform="uppercase") or 
+                div cityscape?
+    //- Article
+    mj-section(background-color="#ffffff" padding="20px 0")
+        //- Element 1
+        mj-column
+            mj-text(align="center" font-family="Ubuntu, Arial, sans-serif" font-size="15px" padding="10px 25px" color="#BD8714" text-transform="uppercase")
+                p sunniest destinations
+            mj-image(src="http://191n.mj.am/img/191n/3s/x2w.jpg" alt="Maldives, Corse : -15%" width="240px")/
+            mj-button(mj-class="cta" background-color="#bd8714" text-transform="uppercase") book now
+            mj-image(src="http://191n.mj.am/img/191n/3s/x2x.jpg" alt="Tahiti, Bora Bora : -10%" width="240px" padding="10px 25px")/
+            mj-button(mj-class="cta" background-color="#bd8714" text-transform="uppercase") book now
+        //- Element 2
+        mj-column
+            mj-text(align="center" font-family="Ubuntu, Arial, sans-serif" font-size="15px" padding="10px 25px" color="#BD8714" text-transform="uppercase")
+                p cheap city tour
+            mj-image(src="http://191n.mj.am/img/191n/3s/x20.jpg" alt="Stockholm, Rome : from 162 € / day" width="240px")/
+            mj-button(mj-class="cta" background-color="#48b6bf" text-transform="uppercase") book now
+            mj-image(src="http://191n.mj.am/img/191n/3s/x2s.jpg" alt="New York, Rome : from 162 € / day" width="240px" padding="10px 25px")/
+            mj-button(mj-class="cta" background-color="#48b6bf" text-transform="uppercase") book now
+    //- Argument final    
+    mj-section(background-color="#ffffff" padding="20px 0")
+        mj-column
+            mj-image(href="https://mjml.io" src="http://191n.mj.am/img/191n/3s/x21.jpg" alt="NEW : Download your city guide" width="250px" padding="0 25px")
+        mj-column
+            mj-text(align="center" color="#000000" font-family="Ubuntu, Helvetica, Arial, sans-serif" font-size="13px" padding="0 25px" font-weight="700" text-transform="uppercase")
+                p rate your stay!
+            mj-image(href="https://mjml.io" src="http://191n.mj.am/img/191n/3s/x2l.png" alt="Book rate" width="131px")
+    //- Footer Top
+    mj-section(background-color="#4b525C")
+        mj-column(width="33%" vertical-align="top")
+            mj-image(src="http://191n.mj.am/img/191n/3s/x09.png" alt="Best companies for your flights" width="30px" padding="10px 25px")/
+            mj-text(mj-class="footer-text")
+                p(style="text-transform:uppercase") best companies for your flights
+        mj-column(width="33%" vertical-align="top")
+            mj-image(src="http://191n.mj.am/img/191n/3s/xsw.png" alt="Insurances included" width="29px" padding="10px 25px")/
+            mj-text(mj-class="footer-text")
+                p(style="text-transform:uppercase") insurances included
+        mj-column(width="33%" vertical-align="top")
+            mj-image(src="http://191n.mj.am/img/191n/3s/xsx.png" alt="Hotels best selection" width="31px" padding="10px 25px")/
+            mj-text(mj-class="footer-text")
+                p(style="text-transform:uppercase") hotels best selection
+    //- Footer Bottom
+    mj-section(background-color="#4395b1")
+        mj-column(width="33.333333%")
+            mj-image(href="https://mjml.io" src="http://191n.mj.am/img/191n/3s/x1l.png" alt="Call us: 0 800 123 456" width="97px" padding="10px 25px")/
+        mj-column(width="33.333333%")
+            mj-image(href="https://mjml.io" src="http://191n.mj.am/img/191n/3s/x1m.png" alt="Meet us : find an agency" width="117px" padding="10px 25px")/
+        mj-column(width="33.333333%")
+            mj-image(href="https://mjml.io" src="http://191n.mj.am/img/191n/3s/xs0.png" alt="ASK US : find an expert" width="110px" padding="10px 25px")/
+    //- Fin
+    mj-section(padding="20px 0")
+        mj-column
+            mj-text(align="center" color="#000000" font-size="11px") [[DELIVERY_INFO]]
+                p [[POSTAL_ADDRESS]]

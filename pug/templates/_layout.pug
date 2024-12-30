@@ -1,7 +1,7 @@
 mjml
     //- Head
     mj-head
-        mj-title Pizza Mjml
+        mj-title Worldly Mjml
         mj-raw.
             <meta name="color-scheme" content="light"/>
             <meta name="supported-color-schemes" content="light"/>
@@ -11,27 +11,21 @@ mjml
             <meta name="format-detection" content="email=no"/>
 
         mj-attributes
-            mj-all(font-family='Arial, Helvetica, sans-serif' font-weight='300' font-size='16px' line-height='120%' color='#626262')/
-            mj-image(border='none')/
-            mj-button(background-color='#F45E43' color="#ffffff" font-size='14px')
+            mj-all(padding="0")
+            mj-class(name="preheader" color="#000000" font-size="11px" font-family="Ubuntu, Helvetica, Arial, sans-serif" padding="0 20px")
+            mj-class(name="cta" color="#ffffff" font-size="13px" border-radius="3px" href="https://mjml.io" font-family="Ubuntu, Helvetica, Arial, sans-serif" padding="20px 25px")
+            mj-class(name="footer-text" align="center" color="#ffffff" font-family="Ubuntu, Helvetica, Arial, sans-serif" font-size="15px" padding="0 25px")
+            mj-navbar-link(padding="0 35px" font-weight="700" font-size="12px")
         mj-breakpoint(width='480px')
-        mj-style.
-            .heading{
-                padding-top: 15px;
-                text-align: center;
-                font-style: 18px;
-                font-family:"serif"
+        mj-style(inline="inline").
+            a{
+                text-decoration: none;
+                color: inherit;
             }
     //- Body
-    mj-body(background-color="#eeeeee")       
+    mj-body(background-color="#d2eeff")       
         //- content
         block content
         //- map
-        block map
+            block map
             include ../includes/_map
-        //- recommended
-        block recommended
-            include ../includes/_recommended
-        //- footer
-        block footer
-            include ../includes/_footer
